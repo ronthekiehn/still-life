@@ -1,0 +1,120 @@
+<style>
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  div{
+    position: absolute;
+  }
+	
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+  }
+  
+  .coffee-1{
+    bottom: 50px;
+    left: 150px;
+    height: 200px;
+    width: 175px;
+  }
+
+  .coffee-lid{
+    top: -25px;
+    border-radius: 100% / 50px;
+    background: #FFD700;
+    height: 50px;
+    width: calc(100% + 2px);
+    left: -1px;
+    z-index: 2;
+  }
+  
+  .coffee-lid-surface{
+     top: -20px;
+     left: 5px;
+     background: #C2B280;
+     width: calc(100% - 10px);
+     height: 40px;
+     border-radius: 100% / 40px;
+     z-index: 2;
+  }
+  
+  .coffee-lid-rim{
+    top: -22px;
+    border-radius: 100% / 50px;
+    background: #FFD700;
+    height: 50px;
+    width: calc(100% + 2px);
+    left: -1px;
+    border: 1px solid black;
+    z-index: 1;
+  }
+  .yellow-area{
+    background: #FFD700;
+    height: 70%;
+    width: 100%;
+  }
+  .elo-text{
+    font-size: 48px;
+    transform:
+  }
+  .yellow-rounded-bottom{
+    top: calc(70% - 25px);
+    border-radius: 100% / 50px;
+    background: #FFD700;
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+  }
+  .red-area{
+    background: red;
+    top: 70%;
+    height: 30%;
+    width: 100%;
+    z-index: 1;
+  }
+  .red-rounded-bottom{
+    top: calc(100% - 25px);
+    border-radius: 100% / 50px;
+    background: red;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+  }
+  .grey-rounded-bottom{
+    top: calc(100% - 20px);
+    border-radius: 100% / 50px;
+    background: lightgray;
+    height: 50px;
+    width: calc(100% + 2px);
+    left: -1px;
+    z-index: 0;
+  }
+
+</style>
+
+
+<div class="frame">
+  <div class="coffee-1">
+    <div class="coffee-lid"></div>
+    <div class="coffee-lid-surface"></div>
+    <div class="coffee-lid-rim"></div>
+    <div class="yellow-area">
+      <div class="elo-text elo-text-1">e</div>
+      <div class="elo-text elo-text-2">telo</div>
+    </div>
+    <div class="yellow-rounded-bottom"></div>
+    <div class="red-area"></div>
+    <div class="red-rounded-bottom"></div>
+    <div class="grey-rounded-bottom"></div>
+  </div>
+</div>
