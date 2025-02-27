@@ -35,7 +35,7 @@
     height: 50px;
     width: calc(100% + 2px);
     left: -1px;
-    z-index: 2;
+    z-index: 4;
   }
   
   .coffee-lid-surface{
@@ -45,7 +45,7 @@
      width: calc(100% - 10px);
      height: 40px;
      border-radius: 100% / 40px;
-     z-index: 2;
+     z-index: 4;
   }
   
   .coffee-lid-rim{
@@ -56,12 +56,16 @@
     width: calc(100% + 2px);
     left: -1px;
     border: 1px solid black;
-    z-index: 1;
+    z-index: 3;
   }
   .yellow-area{
-    background: #FFD700;
-    height: 70%;
+    background: linear-gradient(90deg, rgba(255,215,0,1) 0%, #feed92 30%, rgba(255,215,0,1) 100%);
+
+    height: 85%;
     width: 100%;
+    box-shadow: inset 0px 5px 10px #000000;
+    border-radius: 0% 0% 100% 100% / 50px 50px;
+    z-index: 2;
   }
   .elo-text{
     font-size: 42px;
@@ -69,55 +73,44 @@
   }
   .et1{
     top: 35px;
-    left: -5px;
-    transform: rotateY(-60deg) rotateZ(3deg)
+    left: -8px;
+    transform: rotateY(-70deg) rotateZ(4deg)
   }
   .et2{
     top: 70px;
-    left: -5px;
-    transform: rotateY(-60deg) rotateZ(3deg);
+    left: -8px;
+    transform: rotateY(-70deg) rotateZ(4deg);
   }
   .et3{
     top: 73px;
-    left: 15px;
-    transform: rotateY(-45deg) rotateZ(3deg);
+    left: 8px;
+    transform: rotateY(-55deg) rotateZ(4deg);
   }
   .et4{
-    top: 75px;
-    left: 40px;
-    transform: rotateY(-20deg) rotateZ(2deg);
+    top: 76px;
+    left: 30px;
+    transform: rotateY(-30deg) rotateZ(4deg);
   }
   .et5{
-    top: 76px;
-    left: 68px;
+    top: 78px;
+    left: 56px;
+     transform: rotateZ(3deg);
+    z-index: 3;
   }
-  .yellow-rounded-bottom{
-    top: calc(70% - 25px);
-    border-radius: 100% / 50px;
-    background: #FFD700;
-    height: 50px;
-    width: 100%;
-    z-index: 2;
-  }
+
   .red-area{
-    background: red;
+    background: linear-gradient(90deg, red 0%, #fe9292 30%, red 100%);
     top: 70%;
-    height: 30%;
+    height: 43%;
     width: 100%;
     z-index: 1;
-  }
-  .red-rounded-bottom{
-    top: calc(100% - 25px);
-    border-radius: 100% / 50px;
-    background: red;
-    height: 50px;
-    width: 100%;
-    z-index: 1;
+    box-shadow: inset 0px 5px 10px #000000;
+    border-radius: 0% 0% 100% 100% / 50px 50px;
   }
   .grey-rounded-bottom{
     top: calc(100% - 20px);
     border-radius: 100% / 50px;
-    background: lightgray;
+     background: linear-gradient(90deg, gray 0%, lightgray 30%, gray 100%);
     height: 50px;
     width: calc(100% + 2px);
     left: -1px;
@@ -139,7 +132,7 @@
       <div class="elo-text et4">L</div>
       <div class="elo-text et5">O</div>
     </div>
-    <div class="yellow-rounded-bottom"></div>
+<!--     <div class="yellow-rounded-bottom"></div> -->
     <div class="red-area"></div>
     <div class="red-rounded-bottom"></div>
     <div class="grey-rounded-bottom"></div>
