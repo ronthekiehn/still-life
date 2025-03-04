@@ -36,6 +36,7 @@
     width: calc(100% + 2px);
     left: -1px;
     z-index: 4;
+    background: radial-gradient(circle, rgba(255,215,0,1) 0%, #feed92 20%, rgba(255,215,0,1) 100%);
   }
   
   .coffee-lid-surface{
@@ -47,6 +48,7 @@
      height: 30px;
      border-radius: 100% / 30px;
      z-index: 4;
+    
   }
   
   .coffee-lid-rim{
@@ -61,7 +63,7 @@
     box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.5);
   }
   .yellow-area{
-    background: linear-gradient(90deg, rgba(255,215,0,1) 0%, #feed92 20%, rgba(255,215,0,1) 100%);
+    background: linear-gradient(90deg, rgba(255,238,0,1) 0%, #eeed92 20%, rgba(255,238,0,1) 100%);
 
     height: 80%;
     width: 100%;
@@ -76,22 +78,22 @@
   .et1{
     top: 35px;
     left: -8px;
-    transform: rotateY(-70deg) rotateZ(4deg)
+    transform: rotateY(70deg) rotateZ(4deg)
   }
   .et2{
     top: 70px;
     left: -8px;
-    transform: rotateY(-70deg) rotateZ(4deg);
+    transform: rotateY(70deg) rotateZ(4deg);
   }
   .et3{
     top: 73px;
     left: 8px;
-    transform: rotateY(-55deg) rotateZ(4deg);
+    transform: rotateY(55deg) rotateZ(4deg);
   }
   .et4{
     top: 76px;
     left: 30px;
-    transform: rotateY(-30deg) rotateZ(4deg);
+    transform: rotateY(30deg) rotateZ(4deg);
   }
   .et5{
     top: 78px;
@@ -136,6 +138,25 @@
     top: 90px;
   }
   
+  .coffee-text{
+    font-size: 14px;
+  }
+  .ct1{
+    top: 125px;
+    left: -13px;
+    transform: rotateY(70deg) rotateZ(8deg);
+  }
+  .ct2{
+    top: 130px;
+    left: 15px;
+    transform: rotateY(40deg) rotateZ(5deg);
+  }
+  .ct3{
+    top: 132px;
+    left: 30px;
+    transform: rotateY(20deg) rotateZ(2deg);
+  }
+  
   .nutrition{
     border: 1px solid black;
     border-bottom: transparent;
@@ -143,7 +164,8 @@
     width: 70px;
     top: 30px;
     right: 10px;
-    transform: rotateY(-40deg) rotateZ(-1deg);
+    transform: rotateY(150deg) rotateZ(1deg);
+    text-align: right;
     font-size: 4px;
     z-index: 0;
   }
@@ -151,14 +173,14 @@
   .barcode{
     background-color: white;
     top: 155px;
-    right: 13px;
-    transform: rotateY(-40deg) rotateZ(-1deg);
-    width: 60px;
+    right: 17px;
+    transform: rotateY(150deg) rotateZ(1deg);
+    width: 50px;
     height: 50px;
   }
   .stripe{
     height: 1px;
-    width: 48px;
+    width: 38px;
     left: 6px;
     background-color: black;
   }
@@ -202,7 +224,101 @@
   .st13{
     top: 4px;
   }
+  
+  .white-letters{
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  
+   .wl1{
+    top: 24px;
+    left: -24px;
+    transform: rotateY(70deg) rotateZ(6deg)
+  }
+  .wl2{
+    top: 30px;
+    left: 20px;
+    transform: rotateY(50deg) rotateZ(5deg);
+  }
+  .wl3{
+    top: 32px;
+    left: 42px;
+    transform: rotateY(30deg) rotateZ(5deg);
+  }
+  .wl4{
+    top: 34px;
+    left: 58px;
+    transform: rotateY(0deg) rotateZ(1deg);
+  }
+  
+  .yellow-letters{
+    color: yellow;
+    font-size: 6px;
+    font-weight: bold;
+  }
+  
+   .yl1{
+    top: 34px;
+    left: -5px;
+    transform: rotateY(70deg) rotateZ(6deg)
+  }
+  .yl2{
+    top: 38px;
+    left: 3px;
+    transform: rotateY(50deg) rotateZ(8deg);
+  }
+  .yl3{
+    top: 42px;
+    left: 14px;
+    transform: rotateY(30deg) rotateZ(8deg);
+  }
+  
+  .bottom-letters{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+   .bl1{
+    top: 50px;
+    left: -8px;
+    transform: rotateY(70deg) rotateZ(8deg)
+  }
+  .bl2{
+    top: 55px;
+    left: 12px;
+    transform: rotateY(40deg) rotateZ(5deg);
+  }
+  
 
+  .green-triangle{
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background-color: green;
+    height: 20px;
+    width: 50px;
+    top: 50px;
+    left: 20px;
+    transform: rotateZ(3deg)
+  }
+  .red-triangle{
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    top: 50px;
+    left: 30px;
+    transform: rotateZ(3deg)
+  }
+  
+  .person{
+    background-color: white;
+    border-radius: 999px;
+    height: 15px;
+    width: 15px;
+    top: 54px;
+    left: 37px;
+  }
 </style>
 
 
@@ -217,6 +333,14 @@
       <div class="elo-text et3">E</div>
       <div class="elo-text et4">L</div>
       <div class="elo-text et5">O</div>
+      
+      <div class="coffee-text ct1">Ground</div>
+      <div class="coffee-text ct2">Co</div>
+      <div class="coffee-text ct3">ffee</div>
+
+      <div class="green-triangle"></div>
+      <div class="red-triangle"></div>
+      <div class="person"></div>
       <div class="shadow-ring sr1"></div>
       <div class="shadow-ring sr2"></div>
       <div class="shadow-ring sr3"></div>
@@ -245,7 +369,19 @@
       </div>
     </div>
 
-    <div class="red-area"></div>
+    <div class="red-area">
+      <div class="white-letters wl1">WONDERFUL,</div>
+      <div class="white-letters wl2">LIKE</div>
+      <div class="white-letters wl3">NO</div>
+      <div class="white-letters wl4">OTHER</div>
+      
+      <div class="yellow-letters yl1">BAL</div>
+      <div class="yellow-letters yl2">RAG</div>
+      <div class="yellow-letters yl3">COMPANY</div>
+      
+      <div class="bottom-letters bl1">32OZ</div>
+      <div class="bottom-letters bl2">(283g)</div>
+    </div>
     <div class="red-rounded-bottom"></div>
     <div class="grey-rounded-bottom"></div>
   </div>
