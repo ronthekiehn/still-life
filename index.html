@@ -517,7 +517,7 @@ box-shadow: inset 0px 2px 5px #555555;
   
   .random-shadow{
     background-color: black;
-    opacity: 40%;
+    opacity: 60%;
     border-radius: 999px;
     
     transform: rotateZ(60deg);
@@ -525,9 +525,9 @@ box-shadow: inset 0px 2px 5px #555555;
   }
   
   .rs1{
-    width: 30px;
-    height: 20px;
-    top: 415px;
+    width: 40px;
+    height: 50px;
+    top: 395px;
     left: 120px;
     z-index: 10
   }
@@ -539,7 +539,153 @@ box-shadow: inset 0px 2px 5px #555555;
     left: 305px;
     z-index: 10
   }
+  
+  .coffee-maker{
+    bottom: 50px;
+    left: 330px;
+    height: 270px;
+    width: 140px;
+    z-index: 10;
 
+  }
+  
+  .blacktop{
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    background-color: black;
+    width: 22px;
+    height: 20px;
+    border-radius: 5px;
+    left: 58px;
+
+  }
+  
+  .orangemask{
+    width: 102%;
+    left: -1px;
+    height: 75px;
+    border-radius: 100% 110% 0px 0px;
+    top: 20px;
+    overflow: hidden;
+
+  }
+  .orangebit{
+    
+ background: linear-gradient(0deg, rgba(255,114,14,1) 0%, rgba(255,161,123,1) 30%, rgba(255,114,14,1) 100%);
+    width: 100%;
+    height: 30px;
+    top: 0px;
+
+
+  }
+  
+  .orangesection{
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    height: 100px;
+    width: 100%;
+    top: 50px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .orangebottom{
+    height: 30px;
+    width: 60%;
+    left: 28px;
+    top: 140px;
+    background: linear-gradient(90deg, rgb(210, 46, 0) 0%, rgba(255,114,14,1) 30%, rgb(210, 46, 0) 100%);
+    box-shadow: inset 0px 0px 10px #333333;
+  }
+  
+  .silver{
+    clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+     border-radius: 0% 0% 100% 100% / 20px 20px;
+     background: linear-gradient(90deg, gray 0%, white 40%, gray 100%);
+    height: 100px;
+    width: 100%;
+    top: 165px;
+    border-bottom: 1px solid black;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .bottombottom{
+    width: 90%;
+    left: 7px;
+    top: 250px;
+    height: 10px;
+     border-radius: 0% 0% 100% 100% / 10px 10px;
+    box-shadow: 0px 10px 10px rgb(0,0,0,0.3);
+  }
+
+  .orange-trap{
+    height: 100%;
+    width: 30%;
+    box-shadow: 10px 0px 10px rgb(0, 0, 0, 0.2);
+
+  }
+  .ot1{
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 60% 100%);
+    background-color: rgb(199, 47, 0);
+    left: -7px;
+    top: -5px;
+    transform: rotateZ(-5deg);
+     border-radius: 0% 0% 100% 100% / 20px 20px;
+  }
+  .ot2{
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    background-color: rgb(210, 46, 0);
+    left: 30px;
+    top: -5px;
+     border-radius: 0% 0% 100% 100% / 20px 20px;
+  }
+  
+  .ot3{
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 5% 100%);
+    background-color: rgb(175, 36, 0);
+    left: 60px;
+    top: -5px;
+     border-radius: 0% 0% 100% 100% / 20px 20px;
+  }
+  .ot4{
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 5% 100%);
+    background-color: rgb(164, 38, 0);
+    left: 95px;
+    top: -5px;
+     border-radius: 0% 0% 100% 100% / 20px 20px;
+     transform: rotateZ(5deg);
+  }
+ .orange-cover{
+   width: 90%;
+   left: 8px;
+   height: 100%;
+   box-shadow: inset 0px 0px 10px #000000;
+   opacity: 30%;
+   
+    background: linear-gradient(0deg, rgba(255,114,14,1) 0%, rgba(255,226,206,1) 30%, rgba(255,114,14,1) 100%);
+   
+  }
+  .reflections{
+    width: 20%;
+    height: 100%;
+    opacity: 60%;
+    transform: rotateZ(10deg);
+    left: 10px;
+  }
+   .yellow-reflect{
+    background: linear-gradient(90deg, rgba(255,238,0,1) 0%, #eeed92 20%, rgba(255,238,0,1) 100%);
+    width: 100%;
+    height: 60%;
+    
+    z-index: 2;
+  }
+ 
+  .red-reflect{
+    background: linear-gradient(90deg, red 0%, #fe9292 20%, red 100%);
+    top: 60%;
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 0% 0% 100% 100% / 50px 50px;
+  }
 
 </style>
 
@@ -547,6 +693,7 @@ box-shadow: inset 0px 2px 5px #555555;
 <div class="frame">
   <div class="random-shadow rs1"></div>
   <div class="random-shadow rs2"></div>
+  
   <div class="cup-1">
     <div class="cup-lid"></div>
     <div class="cup-lid-surface"></div>
@@ -724,5 +871,29 @@ box-shadow: inset 0px 2px 5px #555555;
     </div>
     <div class="red-rounded-bottom"></div>
     <div class="grey-rounded-bottom"></div>
+  </div>
+  
+  <div class="coffee-maker">
+    <div class="blacktop"></div>
+    
+    <div class="orangemask">
+      <div class="orangebit"></div>
+    </div>
+    <div class="orangesection">
+      <div class="orange-trap ot1"></div>
+      <div class="orange-trap ot2"></div>
+      <div class="orange-trap ot3"></div>
+      <div class="orange-trap ot4"></div>
+      <div class="orange-cover"></div>
+    </div>
+    
+    <div class="orangebottom"></div>
+    <div class="silver">
+      <div class="reflections">
+      <div class="yellow-reflect"></div>
+      <div class="red-reflect"></div>
+        </div>
+    </div>
+    <div class="bottombottom"></div>
   </div>
 </div>
