@@ -658,9 +658,9 @@ box-shadow: inset 0px 2px 5px #555555;
    left: 8px;
    height: 100%;
    box-shadow: inset 0px 0px 10px #000000;
-   opacity: 30%;
+   opacity: 20%;
    
-    background: linear-gradient(0deg, rgba(255,114,14,1) 0%, rgba(255,226,206,1) 30%, rgba(255,114,14,1) 100%);
+    background: linear-gradient(45deg, rgba(255,114,14,1) 0%, rgba(255,226,206,1) 30%, rgba(255,114,14,1) 100%);
    
   }
   .reflections{
@@ -687,6 +687,25 @@ box-shadow: inset 0px 2px 5px #555555;
     border-radius: 0% 0% 100% 100% / 50px 50px;
   }
 
+  .black-handle{
+    clip-path: polygon(70% 17%, 76% 30%, 79% 53%, 80% 71%, 79% 82%, 69% 81%, 70% 65%, 70% 50%, 68% 36%, 64% 27%, 56% 23%, 56% 11%, 66% 14%);
+
+  background: linear-gradient(45deg, black 70%, gray 80%, black 100%);
+    width: 200px;
+    height: 150px;
+    top: 30px;
+    z-index: 100000;
+    
+  }
+  .orange-handle{
+    background-color: rgba(255,114,14,1);
+    width: 10px;
+    height: 20px;
+    left: 107px;
+    top: 45px;
+    z-index: 1000;
+    box-shadow: inset 0px 0px 3px rgba(0,0,0,0.5), 0px 1px 5px 0px rgba(0,0,0,0.5);
+  }
 </style>
 
 
@@ -894,6 +913,8 @@ box-shadow: inset 0px 2px 5px #555555;
       <div class="red-reflect"></div>
         </div>
     </div>
+    <div class="orange-handle"></div>
+    <div class="black-handle"></div>
     <div class="bottombottom"></div>
   </div>
 </div>
